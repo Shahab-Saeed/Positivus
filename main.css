@@ -1,0 +1,244 @@
+
+
+main .sectiona .c1 .a {
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+main .sectiona .c1 .b {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+main .sectiona .c1b {
+    margin-bottom: 12px;
+}
+
+main .sectiona .c1c p {
+    font-size: 25px;
+    padding: 5px 20px;
+}
+
+main .sectiona .c1c {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    width: 250px;
+
+}
+
+main .sectiona .c1c:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+main .sectiona {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 0PX 290px;
+  
+}
+
+/* FOR SECTION B */
+main .sectionb {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+/* FOR SECTION C */
+
+
+main .sectionc .c1 {
+    background-color: rgb(99, 230, 99);
+    font-size: 40px;    
+    font-weight: 700;
+    padding: 5px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .sectionc .c2 {
+font-size: 24px;
+letter-spacing: 0.5px;
+
+}
+
+main ,.sectionc .c2a{
+    margin-bottom: 5px;
+}
+
+main .sectionc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+/* Base styles for responsiveness */
+
+/* For small devices (phones) */
+@media (max-width: 767px) {
+
+    main .sectiona .c2 img{
+        height: 300px;
+        width: 270px;
+    }
+    main .sectiona {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    main .sectiona .c1 {
+        text-align: center;
+    }
+
+    main .sectiona .c1 .a {
+        font-size: 36px;
+    }
+
+    main .sectiona .c1 .b {
+        font-size: 18px;
+    }
+
+    main .sectiona .c1c {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    main .sectionb {
+        padding: 100px;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    main .sectionb .c1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    main .sectionc {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    main .sectionc .c1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 24px;
+    }
+
+    main .sectionc .c2 {
+        font-size: 20px;
+    }
+}
+
+/* For medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main .sectiona {
+        flex-direction: column;
+        padding: 0 40px;
+    }
+    main .sectiona .c2 img{
+        height: 300px;
+        width: 270px;
+    }
+    main .sectiona .c1 .a {
+        font-size: 44px;
+    }
+
+    main .sectiona .c1 .b {
+        font-size: 20px;
+    }
+
+    main .sectiona .c1c {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    main .sectionb {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    main .sectionb .c1 {
+        width: calc(50% - 15px);
+    }
+
+    main .sectionc {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    main .sectionc .c1 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    main .sectionc .c2 {
+        font-size: 22px;
+    }
+}
+
+/* For larger devices (desktops) */
+@media (min-width: 1024px) {
+    main .sectiona {
+        flex-direction: row;
+        padding: 0 290px;
+    }
+
+    main .sectiona .c1 .a {
+        font-size: 55px;
+    }
+
+    main .sectiona .c1 .b {
+        font-size: 22px;
+    }
+
+    main .sectiona .c1c {
+        width: 250px;
+        font-size: 25px;
+    }
+
+    main .sectionb {
+        display: flex;
+        gap: 90px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    main .sectionb .c1 {
+        width: auto;
+        max-width: none;
+    }
+
+    main .sectionc {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main .sectionc .c1 {
+        width: 250px;
+        font-size: 40px;
+    }
+
+    main .sectionc .c2 {
+        font-size: 24px;
+    }
+}
